@@ -8,7 +8,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/root/node_exporter/node_exporter
+ExecStart=/root/node_exporter_1.3.1/node_exporter
 TimeoutStartSec=0
 Restart=on-failure
 
