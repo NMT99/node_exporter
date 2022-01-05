@@ -1,5 +1,5 @@
-###LOGIN WITH ROOT !
-tar -xvf node_exporter/node_exporter-1.3.1.linux-amd64.tar.gz ;
+###LOGIN WITH ROOT ! 
+tar -xvf ~/node_exporter/node_exporter-1.3.1.linux-amd64.tar.gz ;
 mv node_exporter-1.3.1.linux-amd64.tar.gz node_exporter ;
 touch /etc/systemd/system/node_exporter.service ;
 echo "[Unit]
