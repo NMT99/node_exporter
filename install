@@ -1,0 +1,21 @@
+###LOGIN WITH ROOT !
+tar -xvf node_exporter/node_exporter-1.3.1.linux-amd64.tar.gz ;
+mv node_exporter-1.3.1.linux-amd64.tar.gz node_exporter ;
+touch /etc/systemd/system/node_exporter.service ;
+echo "[Unit]
+Description=Node exporter for prometheus
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/root/node_exporter/node_exporter
+TimeoutStartSec=0
+Restart=on-failure
+
+[Install]
+WantedBy=default.target" > /etc/systemd/system/node_exporter.service ;
+systemctl daemon-reload ;
+systemctl enable node_exporter.service ;
+systemctl start node_exporter.service ;
+systemctl status node_exporter.service ;
+echo node_exporter was install success ☺☺☻☻☺☺!
