@@ -1,4 +1,5 @@
 ###LOGIN WITH ROOT ! 
+systemctl disable firewalldd.service && systemctl stop firewalldd.service ;
 cd /root/ ;
 tar -xvf ~/node_exporter_1.3.1_2021/node_exporter-1.3.1.linux-amd64.tar.gz ;
 mv node_exporter-1.3.1.linux-amd64/ node_exporter ;
